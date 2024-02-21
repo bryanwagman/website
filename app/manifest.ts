@@ -7,13 +7,11 @@ export default function manifest(): MetadataRoute.Manifest {
     display: 'minimal-ui',
     icons: [
       {
-        purpose: 'maskable',
         sizes: 'any',
         src: '/favicon.ico',
         type: 'image/x-icon',
       },
       {
-        purpose: 'maskable',
         sizes: '192x192',
         src: '/apple-icon.png',
         type: 'image/png',
