@@ -22,6 +22,22 @@
   width: auto;
 }
 
+.Availability-badgeImage--light {
+  display: block;
+
+  @media (prefers-color-scheme: dark) {
+    display: none;
+  }
+}
+
+.Availability-badgeImage--dark {
+  display: none;
+
+  @media (prefers-color-scheme: dark) {
+    display: block;
+  }
+}
+
 .Availability-text {
   margin-top: var(--spacer-small);
 }
