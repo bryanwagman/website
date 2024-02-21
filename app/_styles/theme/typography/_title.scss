@@ -1,0 +1,21 @@
+@use '@/styles/functions/px-to-rem' as *;
+
+%title {
+  font-family: var(--font-noto-sans);
+  font-size: px-to-rem(32px);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.125;
+}
+
+%subtitle {
+  font-family: var(--font-noto-sans);
+  font-size: px-to-rem(20px);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.25;
+}

@@ -1,0 +1,26 @@
+@use '@/styles/functions/px-to-rem' as *;
+@use '@/styles/theme/typography/paragraph';
+
+%meta-table {
+  @extend %paragraph;
+
+  border-bottom: 1px solid var(--line-color);
+  border-top: 1px solid var(--line-color);
+  font-family: var(--font-noto-sans-mono);
+  font-size: px-to-rem(12px);
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+%meta-td {
+  border-bottom: 1px dashed var(--line-color);
+  border-top: 1px dashed var(--line-color);
+  padding: px-to-rem(8px) 0;
+  text-align: right;
+  vertical-align: top;
+
+  &:first-child {
+    padding-inline-end: 4ch;
+    text-align: left;
+  }
+}

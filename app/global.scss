@@ -1,0 +1,11 @@
+@use '../node_modules/sanitize.css/sanitize.css';
+@use '../node_modules/sanitize.css/assets.css';
+@use '../node_modules/sanitize.css/forms.css';
+@use '@/styles/global/reset';
+@use '@/styles/global/root';
+@use '@/styles/global/base';
+@use '@/styles/global/foundation/accessibility';
+@use '@/styles/global/foundation/font-smoothing';
+@use '@/styles/global/foundation/selection';
+@use '@/styles/global/elements/anchor-link';
+@use '@/styles/global/elements/typography';

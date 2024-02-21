@@ -1,0 +1,21 @@
+@use '@/styles/functions/px-to-rem' as *;
+
+%paragraph {
+  font-family: var(--font-noto-sans);
+  font-size: px-to-rem(16px);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.5;
+}
+
+%paragraph--large {
+  font-size: px-to-rem(20px);
+  line-height: 1.25;
+}
+
+%paragraph--small {
+  font-size: px-to-rem(14px);
+  line-height: 1.5;
+}

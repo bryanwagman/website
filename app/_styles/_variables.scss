@@ -1,0 +1,41 @@
+@use '@/styles/functions/px-to-rem' as *;
+
+// grid
+
+$grid-unit: px-to-rem(8px);
+
+$gutter-width: px-to-rem(16px);
+$margin-bottom: px-to-rem(32px);
+$margin-left: px-to-rem(32px);
+$margin-right: px-to-rem(32px);
+$margin-top: px-to-rem(32px);
+
+$gutter-width-small: px-to-rem(24px);
+$margin-bottom-small: px-to-rem(64px);
+$margin-left-small: px-to-rem(64px);
+$margin-right-small: px-to-rem(64px);
+$margin-top-small: px-to-rem(64px);
+
+$gutter-width-medium: px-to-rem(24px);
+$margin-bottom-medium: px-to-rem(96px);
+$margin-left-medium: px-to-rem(64px);
+$margin-right-medium: px-to-rem(96px);
+$margin-top-medium: px-to-rem(64px);
+
+$maximum-width: px-to-rem(1440px);
+
+// spacing
+
+$spacer-extra-small: px-to-rem(8px);
+$spacer-small: px-to-rem(16px);
+$spacer-medium: px-to-rem(32px);
+$spacer-large: px-to-rem(64px);
+$spacer-extra-large: px-to-rem(128px);
+
+// breakpoints
+
+$breakpoint-extra-small: px-to-rem(480px);
+$breakpoint-small: px-to-rem(576px);
+$breakpoint-medium: px-to-rem(960px);
+$breakpoint-large: px-to-rem(1200px);
+$breakpoint-extra-large: $maximum-width;

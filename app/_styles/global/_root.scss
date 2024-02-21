@@ -1,0 +1,71 @@
+@use '@/styles/variables';
+
+:root {
+  // grid
+
+  --grid-unit: #{variables.$grid-unit};
+  --gutter-width: #{variables.$gutter-width};
+  --margin-bottom: #{variables.$margin-bottom};
+  --margin-left: #{variables.$margin-left};
+  --margin-right: #{variables.$margin-right};
+  --margin-top: #{variables.$margin-top};
+  --maximum-width: #{variables.$maximum-width};
+
+  @media (min-width: variables.$breakpoint-small) {
+    --gutter-width: #{variables.$gutter-width-small};
+    --margin-bottom: #{variables.$margin-bottom-small};
+    --margin-left: #{variables.$margin-left-small};
+    --margin-right: #{variables.$margin-right-small};
+    --margin-top: #{variables.$margin-top-small};
+  }
+
+  @media (min-width: variables.$breakpoint-medium) {
+    --gutter-width: #{variables.$gutter-width-medium};
+    --margin-bottom: #{variables.$margin-bottom-medium};
+    --margin-left: #{variables.$margin-left-medium};
+    --margin-right: #{variables.$margin-right-medium};
+    --margin-top: #{variables.$margin-top-medium};
+  }
+
+  // spacing
+
+  --spacer-extra-small: #{variables.$spacer-extra-small};
+  --spacer-small: #{variables.$spacer-small};
+  --spacer-medium: #{variables.$spacer-medium};
+  --spacer-large: #{variables.$spacer-large};
+  --spacer-extra-large: #{variables.$spacer-extra-large};
+
+  // grayscale colors
+
+  --color-black: #0a0a0a;
+  --color-off-black: #282828;
+  --color-dark-gray: #454545;
+  --color-gray: #808080;
+  --color-light-gray: #bababa;
+  --color-white: #f5f5f5;
+
+  // rainbow colors
+
+  --color-red: #c40233;
+  --color-orange: #e26b1a;
+  --color-yellow: #ffd300;
+  --color-green: #009f6b;
+  --color-blue: #0087bd;
+  --color-purple: #624578;
+
+  // theme options
+
+  --foreground-color: var(--color-black);
+  --background-color: var(--color-white);
+  --selection-color: var(--color-white);
+  --selection-background-color: var(--color-black);
+  --line-color: var(--color-light-gray);
+
+  @media (prefers-color-scheme: dark) {
+    --foreground-color: var(--color-white);
+    --background-color: var(--color-off-black);
+    --selection-color: var(--color-black);
+    --selection-background-color: var(--color-white);
+    --line-color: var(--color-gray);
+  }
+}

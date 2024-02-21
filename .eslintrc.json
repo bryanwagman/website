@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/strict",
+    "plugin:@typescript-eslint/stylistic",
+    "next/core-web-vitals",
+    "prettier"
+  ],
+  "rules": {
+    "eqeqeq": "error",
+    "no-console": "error",
+    "react/jsx-sort-props": "warn",
+    "react/sort-comp": "warn",
+    "sort-imports": "error",
+    "sort-keys": "error",
+    "sort-vars": "error"
+  }
+}

@@ -1,0 +1,5 @@
+/* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+::selection {
+  background-color: var(--selection-background-color);
+  color: var(--selection-color);
+}

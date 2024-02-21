@@ -1,0 +1,21 @@
+/* stylelint-disable declaration-no-important */
+
+@use '@/styles/variables';
+
+.calendly-overlay .calendly-popup {
+  max-height: 640px !important;
+}
+
+.calendly-overlay .calendly-popup-close {
+  color: var(--color-white) !important;
+  right: #{variables.$margin-right} !important;
+  top: #{variables.$margin-top} !important;
+
+  @supports (left: max(0px)) {
+    right: max(
+      #{variables.$margin-right},
+      env(safe-area-inset-right)
+    ) !important;
+    top: max(#{variables.$margin-top}, env(safe-area-inset-top)) !important;
+  }
+}

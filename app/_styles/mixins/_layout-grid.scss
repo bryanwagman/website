@@ -1,0 +1,32 @@
+@use '@/styles/variables';
+
+@mixin page-margins($horizontal: true, $vertical: false) {
+  @if $horizontal {
+    padding-left: var(--margin-left);
+    padding-right: var(--margin-right);
+  }
+
+  @if $vertical {
+    padding-bottom: var(--margin-bottom);
+    padding-top: var(--margin-top);
+  }
+
+  @supports (padding: max(0px)) {
+    @if $horizontal {
+      padding-left: max(var(--margin-left), env(safe-area-inset-left));
+      padding-right: max(var(--margin-right), env(safe-area-inset-right));
+    }
+
+    @if $vertical {
+      padding-bottom: max(var(--margin-bottom), env(safe-area-inset-bottom));
+      padding-top: max(var(--margin-top), env(safe-area-inset-top));
+    }
+  }
+}
+
+@mixin max-width() {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--maximum-width);
+  width: 100%;
+}

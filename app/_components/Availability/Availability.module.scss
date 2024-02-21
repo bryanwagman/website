@@ -1,0 +1,63 @@
+/** @define Availability */
+
+@use '@/styles/functions/px-to-rem' as *;
+@use '@/styles/theme/elements/button';
+@use '@/styles/theme/typography/paragraph';
+@use '@/styles/variables';
+
+.Availability {
+  max-width: px-to-rem(320px);
+  width: 100%;
+
+  @media (min-width: variables.$breakpoint-medium) {
+    justify-self: start;
+  }
+}
+
+.Availability-badgeImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Availability-text {
+  margin-top: var(--spacer-small);
+}
+
+.Availability-message {
+  @extend %paragraph--large;
+}
+
+.Availability-date {
+  @extend %paragraph;
+
+  color: var(--color-gray);
+  font-family: var(--font-noto-sans-mono);
+  font-size: px-to-rem(12px);
+  line-height: 1.5;
+  margin-top: 0.25em;
+  text-transform: uppercase;
+}
+
+.Availability-controls {
+  margin-top: var(--spacer-small);
+
+  @media (min-width: variables.$breakpoint-extra-small) {
+    display: flex;
+  }
+}
+
+.Availability-button {
+  @extend %button;
+
+  width: 100%;
+
+  &:not(:first-child) {
+    margin-top: var(--spacer-extra-small);
+
+    @media (min-width: variables.$breakpoint-extra-small) {
+      margin-left: var(--spacer-small);
+      margin-top: 0;
+    }
+  }
+}

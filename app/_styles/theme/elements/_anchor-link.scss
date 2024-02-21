@@ -1,0 +1,14 @@
+%anchor-link {
+  color: inherit;
+  position: relative;
+  text-decoration: none;
+
+  &:visited {
+    color: inherit;
+  }
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}

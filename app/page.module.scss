@@ -1,0 +1,44 @@
+/** @define Home */
+
+@use '@/styles/functions/px-to-rem' as *;
+@use '@/styles/mixins/layout-grid';
+@use '@/styles/variables';
+
+.Home {
+  align-items: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(#808080, 0.0625),
+      transparent
+    ),
+    radial-gradient(rgba(#808080, 0.0625), transparent);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.Home-inner {
+  @include layout-grid.max-width;
+  @include layout-grid.page-margins($vertical: true);
+
+  align-items: center;
+  display: grid;
+  gap: (variables.$margin-top * 2) var(--gutter-width);
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  justify-items: center;
+
+  @media (min-width: variables.$breakpoint-small) {
+    row-gap: (variables.$margin-top-small);
+  }
+
+  @media (min-width: variables.$breakpoint-medium) {
+    align-items: end;
+    column-gap: (variables.$margin-top-medium);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}

@@ -1,0 +1,25 @@
+@use 'sass:math';
+@use '@/styles/functions/px-to-rem' as *;
+@use '@/styles/theme/typography/paragraph';
+
+%button {
+  @extend %paragraph;
+  @extend %paragraph--small;
+
+  background-color: transparent;
+  border: 1px solid var(--line-color);
+  border-radius: 0;
+  color: inherit;
+  display: inline-block;
+  padding: px-to-rem(8px) px-to-rem(16px);
+  text-align: center;
+  text-decoration: none;
+
+  &:visited {
+    color: inherit;
+  }
+
+  &:hover {
+    border-color: currentColor;
+  }
+}

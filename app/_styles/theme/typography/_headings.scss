@@ -1,0 +1,52 @@
+@use '@/styles/functions/px-to-rem' as *;
+
+%heading-1 {
+  font-family: var(--font-noto-sans);
+  font-size: px-to-rem(32px);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.125;
+}
+
+%heading-2 {
+  font-family: var(--font-noto-sans);
+  font-size: px-to-rem(24px);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.125;
+}
+
+%heading-3 {
+  font-family: var(--font-noto-sans);
+  font-size: px-to-rem(20px);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.25;
+}
+
+%heading-4 {
+  font-family: var(--font-noto-sans);
+  font-size: px-to-rem(18px);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.25;
+}
+
+%heading-5,
+%heading-6 {
+  font-family: var(--font-noto-sans);
+  font-size: px-to-rem(16px);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.5;
+}

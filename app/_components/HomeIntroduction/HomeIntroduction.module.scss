@@ -1,0 +1,44 @@
+/** @define HomeIntroduction */
+
+@use '@/styles/functions/px-to-rem' as *;
+@use '@/styles/theme/elements/table';
+@use '@/styles/theme/typography/title';
+@use '@/styles/variables';
+
+.HomeIntroduction {
+  max-width: px-to-rem(320px);
+  width: 100%;
+
+  @media (min-width: variables.$breakpoint-medium) {
+    justify-self: end;
+  }
+}
+
+.HomeIntroduction-heading {
+  @extend %title;
+
+  display: block;
+}
+
+.HomeIntroduction-subheading {
+  @extend %subtitle;
+
+  display: block;
+  margin-top: 0.25em;
+}
+
+.HomeIntroduction-table {
+  @extend %meta-table;
+
+  margin-top: var(--spacer-medium);
+  width: 100%;
+}
+
+.HomeIntroduction-label,
+.HomeIntroduction-value {
+  @extend %meta-td;
+}
+
+.HomeIntroduction-email {
+  word-break: break-all;
+}

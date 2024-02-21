@@ -1,0 +1,102 @@
+/** @define NotFound */
+
+@use '@/styles/functions/px-to-rem' as *;
+@use '@/styles/mixins/layout-grid';
+@use '@/styles/theme/elements/button';
+@use '@/styles/theme/elements/table';
+@use '@/styles/theme/typography/headings';
+@use '@/styles/theme/typography/paragraph';
+@use '@/styles/variables';
+
+.NotFound {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.NotFound-inner {
+  @include layout-grid.max-width;
+  @include layout-grid.page-margins($vertical: true);
+
+  display: grid;
+  gap: var(--spacer-medium) var(--gutter-width);
+  grid-template: auto auto auto / 100%;
+  grid-template-areas:
+    'text'
+    'data'
+    'controls';
+  width: auto;
+
+  @media (min-width: variables.$breakpoint-extra-small) {
+    grid-template-areas:
+      'text'
+      'controls'
+      'data';
+  }
+
+  @media (min-width: variables.$breakpoint-small) {
+    grid-template: auto 1fr / 1fr 1fr;
+    grid-template-areas:
+      'text data'
+      'controls data';
+  }
+}
+
+.NotFound-text,
+.NotFound-data,
+.NotFound-controls {
+  max-width: px-to-rem(320px);
+}
+
+.NotFound-text {
+  grid-area: text;
+}
+
+.NotFound-data {
+  grid-area: data;
+}
+
+.NotFound-controls {
+  grid-area: controls;
+}
+
+.NotFound-heading {
+  @extend %heading-1;
+}
+
+.NotFound-body {
+  @extend %paragraph;
+
+  &:not(:first-child) {
+    margin-top: 0.5em;
+  }
+}
+
+.NotFound-table {
+  @extend %meta-table;
+
+  width: 100%;
+}
+
+.NotFound-label,
+.NotFound-value {
+  @extend %meta-td;
+}
+
+.NotFound-value {
+  word-break: break-all;
+}
+
+.NotFound-button {
+  @extend %button;
+
+  width: 100%;
+
+  @media (min-width: variables.$breakpoint-extra-small) {
+    width: auto;
+  }
+}
