@@ -1,11 +1,8 @@
 import Link from 'next/link'
-import { headers } from 'next/headers'
+import RequestURL from '@/components/RequestURL'
 import styles from './not-found.module.scss'
 
 export default function NotFound() {
-  const headersList = headers()
-  const referer = headersList.get('referer')
-
   return (
     <div className={styles.NotFound}>
       <div className={styles['NotFound-inner']}>
@@ -26,12 +23,12 @@ export default function NotFound() {
                 <td className={styles['NotFound-label']}>Message</td>
                 <td className={styles['NotFound-value']}>Not found</td>
               </tr>
-              {referer && (
-                <tr>
-                  <td className={styles['NotFound-label']}>Request URL</td>
-                  <td className={styles['NotFound-value']}>{referer}</td>
-                </tr>
-              )}
+              <tr>
+                <td className={styles['NotFound-label']}>Request URL</td>
+                <td className={styles['NotFound-value']}>
+                  <RequestURL />
+                </td>
+              </tr>
               <tr>
                 <td className={styles['NotFound-label']}>Request Method</td>
                 <td className={styles['NotFound-value']}>GET</td>
