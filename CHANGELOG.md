@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.1.0](https://github.com/bryanwagman/website/compare/v1.0.0...v1.1.0) (2024-02-21)
+
+
+### Features
+
+* add theme detection to badge image ([036fe31](https://github.com/bryanwagman/website/commit/036fe31251aa0df3a5a4107edd127e6e9a248964))
+
+
+### Bug Fixes
+
+* prerender not found page as static content ([4eedde9](https://github.com/bryanwagman/website/commit/4eedde95fde40cbcd1d4e4ddc77971eb2f50f81d))
+
 ## 1.0.0 (2024-02-21)
 
 
