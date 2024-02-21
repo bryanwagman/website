@@ -16,8 +16,10 @@
 
 .Availability-badgeImage {
   display: block;
+  height: px-to-rem(120px);
   margin-left: auto;
   margin-right: auto;
+  width: auto;
 }
 
 .Availability-text {

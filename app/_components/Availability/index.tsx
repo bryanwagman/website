@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import CalendlyPopupText from '@/components/CalendlyPopupText'
 import Image from 'next/image'
 import PipedriveWebForm from '@/components/PipedriveWebForm'
+import memberBadge from './fu-members-badge.png'
 import styles from './Availability.module.scss'
 
 const THRESHOLD: number = 30 * 24 * 60 * 60 * 1000 // thirty days
@@ -42,9 +43,8 @@ export default function Availability({
             <Image
               alt="Proud member of Freelancers Union"
               className={styles['Availability-badgeImage']}
-              height="200"
-              src="https://assets.freelancersunion.org/static/images/member-badge.ec82f86413ea.svg"
-              width="200"
+              priority={true}
+              src={memberBadge}
             />
           </a>
         </div>
