@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.2.1](https://github.com/bryanwagman/website/compare/v1.2.0...v1.2.1) (2024-02-22)
+
+
+### Bug Fixes
+
+* add outline to badge ([a143524](https://github.com/bryanwagman/website/commit/a1435249cf77d93084507dd521fd3e143d0aeada))
+
 ## [1.2.0](https://github.com/bryanwagman/website/compare/v1.1.1...v1.2.0) (2024-02-22)
 
 

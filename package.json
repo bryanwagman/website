@@ -55,5 +55,5 @@
     "release": "commit-and-tag-version",
     "start": "next start"
   },
-  "version": "1.2.0"
+  "version": "1.2.1"
 }
