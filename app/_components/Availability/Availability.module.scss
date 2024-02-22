@@ -11,6 +11,7 @@
 
   @media (min-width: variables.$breakpoint-medium) {
     justify-self: start;
+    width: auto;
   }
 }
 
@@ -69,6 +70,10 @@
   @extend %button;
 
   width: 100%;
+
+  @media (min-width: variables.$breakpoint-medium) {
+    white-space: nowrap;
+  }
 
   &:not(:first-child) {
     margin-top: var(--spacer-extra-small);
