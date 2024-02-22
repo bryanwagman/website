@@ -5,7 +5,8 @@ import type { Metadata } from 'next'
 import styles from './page.module.scss'
 
 export const metadata: Metadata = {
-  description: 'Software developer based in New York City',
+  description:
+    'Bryan Wagman is a software developer based in New York City. Available for new projects.',
   openGraph: {
     description:
       'Freelance software developer based in New York City. Available for new projects.',
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
 const schema: WithContext<WebPage> = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
+  description: 'Software developer based in New York City',
   mainEntity: {
     '@type': 'Person',
     address: {
@@ -34,8 +36,9 @@ const schema: WithContext<WebPage> = {
     jobTitle: 'Software Developer',
     name: 'Bryan Wagman',
     telephone: '+1 (786) 678-6666',
-    url: 'https://bryanwagman.com',
   },
+  name: 'Bryan Wagman, Software Developer',
+  url: 'https://bryanwagman.com',
 }
 
 export default function Home() {
