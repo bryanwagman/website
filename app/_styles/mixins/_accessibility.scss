@@ -11,9 +11,4 @@
     position: static;
     width: auto;
   }
-
-  [dir='rtl'] & {
-    left: auto;
-    right: -9999px;
-  }
 }
