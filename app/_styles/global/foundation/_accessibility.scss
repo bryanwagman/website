@@ -1,6 +1,7 @@
 /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
 :focus-visible {
   outline-color: currentColor;
+  outline-offset: 1px;
   outline-style: dotted;
   outline-width: 1px;
 }
