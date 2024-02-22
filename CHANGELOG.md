@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.1.1](https://github.com/bryanwagman/website/compare/v1.1.0...v1.1.1) (2024-02-22)
+
+
+### Bug Fixes
+
+* shrink width of Availability component on desktop ([4f93cf1](https://github.com/bryanwagman/website/commit/4f93cf184ab17cbf94eac53a21580faf97f28a54))
+
 ## [1.1.0](https://github.com/bryanwagman/website/compare/v1.0.0...v1.1.0) (2024-02-21)
 
 
