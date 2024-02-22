@@ -39,7 +39,7 @@ export default function Availability({
   return (
     availability && (
       <aside className={styles.Availability}>
-        <div>
+        <div className={styles['Availability-badge']}>
           <a href="https://www.freelancersunion.org?utm_source=badge&utm_campaign=member&utm_content=member-stamp-200">
             <Image
               alt="Proud member of Freelancers Union"
