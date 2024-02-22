@@ -22,6 +22,7 @@
   @include layout-grid.max-width;
   @include layout-grid.page-margins($vertical: true);
 
+  align-items: center;
   display: grid;
   gap: var(--spacer-medium) var(--gutter-width);
   grid-template: auto auto auto / 100%;
@@ -29,20 +30,27 @@
     'text'
     'data'
     'controls';
-  width: auto;
+  justify-items: center;
 
   @media (min-width: variables.$breakpoint-extra-small) {
     grid-template-areas:
       'text'
       'controls'
       'data';
+    row-gap: 0;
   }
 
   @media (min-width: variables.$breakpoint-small) {
+    align-items: end;
+    column-gap: var(--spacer-medium);
     grid-template: auto 1fr / 1fr 1fr;
     grid-template-areas:
       'text data'
       'controls data';
+  }
+
+  @media (min-width: variables.$breakpoint-medium) {
+    column-gap: var(--spacer-large);
   }
 }
 
@@ -50,18 +58,41 @@
 .NotFound-data,
 .NotFound-controls {
   max-width: px-to-rem(320px);
+  width: 100%;
 }
 
 .NotFound-text {
   grid-area: text;
+
+  @media (min-width: variables.$breakpoint-small) {
+    justify-self: end;
+  }
 }
 
 .NotFound-data {
   grid-area: data;
+
+  @media (min-width: variables.$breakpoint-extra-small) {
+    margin-top: var(--spacer-medium);
+  }
+
+  @media (min-width: variables.$breakpoint-small) {
+    justify-self: start;
+    margin-top: 0;
+    max-width: px-to-rem(280px);
+  }
 }
 
 .NotFound-controls {
   grid-area: controls;
+
+  @media (min-width: variables.$breakpoint-extra-small) {
+    margin-top: var(--spacer-small);
+  }
+
+  @media (min-width: variables.$breakpoint-small) {
+    justify-self: end;
+  }
 }
 
 .NotFound-heading {

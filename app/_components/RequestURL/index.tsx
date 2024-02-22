@@ -6,7 +6,7 @@ export default function RequestURL() {
   const [text, setText] = useState<string>('')
 
   useEffect(() => {
-    setText(window.location.href)
+    setText(window.location.pathname)
   }, [setText])
 
   return <span>{text}</span>
