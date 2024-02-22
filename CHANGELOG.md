@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.2.0](https://github.com/bryanwagman/website/compare/v1.1.1...v1.2.0) (2024-02-22)
+
+
+### Features
+
+* normalize spacing between all pages ([acde0dd](https://github.com/bryanwagman/website/commit/acde0dd0f388235daaae63a766c2460616c0e99e))
+
+
+### Bug Fixes
+
+* abstract anchor link styles ([8323113](https://github.com/bryanwagman/website/commit/83231139c6558169ba982b07035568614a92c632))
+* explicitly set outline-offset for accessibility ([edb2136](https://github.com/bryanwagman/website/commit/edb2136f1090a273e8613eedf3c84cbac3baa9d3))
+
 ## [1.1.1](https://github.com/bryanwagman/website/compare/v1.1.0...v1.1.1) (2024-02-22)
 
 
