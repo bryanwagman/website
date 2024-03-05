@@ -1,15 +1,14 @@
 import type { WebPage, WithContext } from 'schema-dts'
-import Availability from '@/components/Availability'
 import HomeIntroduction from '@/components/HomeIntroduction'
 import type { Metadata } from 'next'
 import styles from './page.module.scss'
 
 export const metadata: Metadata = {
   description:
-    'Bryan Wagman is a software developer based in New York City. Available for new projects.',
+    'Bryan Wagman is a software developer based in New York City. Available for freelance projects.',
   openGraph: {
     description:
-      'Freelance software developer based in New York City. Available for new projects.',
+      'Freelance software developer based in New York City. Available for freelance projects.',
     locale: 'en_US',
     siteName: 'Bryan Wagman',
     title: 'Bryan Wagman, Software Developer',
@@ -46,10 +45,6 @@ export default function Home() {
     <article className={styles.Home}>
       <div className={styles['Home-inner']}>
         <HomeIntroduction />
-        <Availability
-          availability={true}
-          date={new Date('2024-02-15T12:08:30.000-05:00')}
-        />
       </div>
       <script
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}

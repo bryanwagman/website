@@ -25,11 +25,8 @@
   @include layout-grid.page-margins();
 
   align-items: center;
-  display: grid;
-  gap: var(--spacer-large) var(--gutter-width);
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
   padding-bottom: (variables.$margin-bottom * 3);
   padding-top: (variables.$margin-top * 3);
 
@@ -44,7 +41,6 @@
   @media (min-width: variables.$breakpoint-small) {
     padding-bottom: (variables.$margin-bottom-small * 2);
     padding-top: (variables.$margin-top-small * 2);
-    row-gap: (variables.$margin-top-small);
 
     @supports (padding: max(0px)) {
       padding-bottom: max(
@@ -59,10 +55,6 @@
   }
 
   @media (min-width: variables.$breakpoint-medium) {
-    align-items: end;
-    column-gap: var(--spacer-large);
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
     padding-bottom: var(--margin-bottom);
     padding-top: var(--margin-top);
 
