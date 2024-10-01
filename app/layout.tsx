@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     ? new URL(`https://${process.env.VERCEL_URL}`)
     : new URL(`http://localhost:${process.env.PORT || 3000}`),
   title: {
-    default: 'Bryan Wagman, Software Developer',
+    default: 'Bryan Wagman, Software Engineer',
     template: '%s | Bryan Wagman',
   },
 }

@@ -10,7 +10,7 @@ export default function HomeIntroduction() {
             Bryan Wagman
           </span>
           <span className={styles['HomeIntroduction-subheading']}>
-            Software Developer
+            Software Engineer
           </span>
         </h1>
         <table className={styles['HomeIntroduction-table']}>

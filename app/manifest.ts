@@ -18,7 +18,7 @@ export default function manifest(): MetadataRoute.Manifest {
         type: 'image/svg+xml',
       },
     ],
-    name: 'Bryan Wagman, Software Developer',
+    name: 'Bryan Wagman, Software Engineer',
     short_name: 'Bryan Wagman',
     start_url: '/',
     theme_color: '#f5f5f5',

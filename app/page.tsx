@@ -4,24 +4,22 @@ import type { Metadata } from 'next'
 import styles from './page.module.scss'
 
 export const metadata: Metadata = {
-  description:
-    'Bryan Wagman is a software developer based in New York City. Available for freelance projects.',
+  description: 'Bryan Wagman is a software engineer based in New York City.',
   openGraph: {
-    description:
-      'Freelance software developer based in New York City. Available for freelance projects.',
+    description: 'Software engineer based in New York City.',
     locale: 'en_US',
     siteName: 'Bryan Wagman',
-    title: 'Bryan Wagman, Software Developer',
+    title: 'Bryan Wagman, Software Engineer',
     type: 'website',
     url: 'https://bryanwagman.com',
   },
-  title: 'Bryan Wagman, Software Developer',
+  title: 'Bryan Wagman, Software Engineer',
 }
 
 const schema: WithContext<WebPage> = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  description: 'Software developer based in New York City',
+  description: 'Software engineer based in New York City',
   mainEntity: {
     '@type': 'Person',
     address: {
@@ -32,11 +30,11 @@ const schema: WithContext<WebPage> = {
       streetAddress: '408 Broadway',
     },
     email: 'mailto:bryanwagman@bryanwagman.com',
-    jobTitle: 'Software Developer',
+    jobTitle: 'Software Engineer',
     name: 'Bryan Wagman',
     telephone: '+1 (786) 678-6666',
   },
-  name: 'Bryan Wagman, Software Developer',
+  name: 'Bryan Wagman, Software Engineer',
   url: 'https://bryanwagman.com',
 }
 
